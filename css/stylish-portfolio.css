@@ -16,6 +16,10 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+p {
+    padding: 0 10% 0 10%;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -172,6 +176,7 @@ hr.small {
    width: 150px;
    height: 150px;
    border-radius: 100%;
+   margin-bottom: 5%;
 }
 
 /* Services */
@@ -189,14 +194,21 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 500px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/fullsailmacbook.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    background-attachment: fixed;
 }
+
+
 
 /* Portfolio */
 
@@ -210,6 +222,8 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+    height: 250px;
+    padding-bottom: 5%;
 }
 
 .img-portfolio:hover {
@@ -254,3 +268,54 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+/*--------------------  Media Queries ---------------------*/
+
+    @media only screen and (max-width : 1445px) {
+        body {
+            background-color: green;
+        }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+        body {
+            background-color: purple;
+        }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+        body {
+            background-color: yellow;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        body {
+            background-color: blue;
+        }
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+        body {
+            background-color: orange;
+        }
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        body {
+            background-color: red;
+        }
+    }
